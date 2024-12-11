@@ -1,0 +1,41 @@
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -voptargs="+acc" RISC_tb 
+# Start time: 09:14:51 on Aug 06,2024
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading sv_std.std
+# Loading work.RISC_tb(fast)
+# Loading work.TOP_MODULE(fast)
+# Loading work.data_path(fast)
+# Loading work.register_file(fast)
+# Loading work.sign_extend(fast)
+# Loading work.ALU(fast)
+# Loading work.control_unit(fast)
+# Loading work.main_decoder(fast)
+# Loading work.ALU_decoder(fast)
+# Loading work.instr_mem(fast)
+# Loading work.cache_sys(fast)
+# Loading work.cache_ctrl(fast)
+# Loading work.cache_mem(fast)
+# Loading work.main_mem(fast)
+add wave -position insertpoint sim:/RISC_tb/uut/*
+add wave -position insertpoint  \
+sim:/RISC_tb/uut/D_MEM/CACHE_CONTROL/cs
+run -all
+# ** Note: $stop    : RISC_tb.sv(21)
+#    Time: 201 ns  Iteration: 1  Instance: /RISC_tb
+# Break in Module RISC_tb at RISC_tb.sv line 21
+# End time: 09:17:47 on Aug 06,2024, Elapsed time: 0:02:56
+# Errors: 0, Warnings: 0

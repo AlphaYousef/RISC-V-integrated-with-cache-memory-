@@ -1,0 +1,8 @@
+ABCDE4B7  // lui s1, 0xABCDE 
+00902023  // sw s1, 0(zero)
+00000483  // lb s1, 0(zero)
+FFFFF4B7  // lui s1, 0xFFFFF
+00902023  // sw s1, 0(zero)
+00000483  // lb s1, 0(zero)
+00000013  // addi zero, zero, 0
+00000013  // addi zero, zero, 0
